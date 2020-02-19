@@ -36,7 +36,7 @@ module Pismo
         :continuous_factor => 1.62,                              # continuous factor for block score ( the larger, the harder to continue )
         :no_body_factor => 0.72,                                 # no body factor that reduces block score if waste expressions are present
         :punctuation_weight => 10,                               # score weight for punctuation
-        :punctuations => /(\.[^A-Za-z0-9]|,[^0-9]|!|\?)/,        # punctuation characters
+        :punctuations => /(\.[^A-Za-z0-9ㄱ-ㅎ가-힣]|,[^0-9]|!|\?)/,        # punctuation characters
         :waste_expressions => /Copyright|All Rights Reserved/i,  # characteristic keywords including footer
         :debug => false,                                         # if true, output block information to stdout
       }
